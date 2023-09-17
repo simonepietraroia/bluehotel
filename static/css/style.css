@@ -9,6 +9,7 @@ body {
     background-color: #013b89;
     width: 100%;
     position: fixed;
+    z-index: 5;
 }
 
 #logo {
@@ -115,3 +116,7 @@ main {
     animation: fade-in 1s ease forwards;
 }
 
+.container-right img {
+    width: 200px;
+    height: auto;
+}
