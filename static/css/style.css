@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    color: #012c64;
 }
 
 #nav-bar {
@@ -74,11 +75,18 @@ main {
     height: 800px;
 }
 
-.info-container {
+.left-text-container {
     background-color: #eaeaea;
     height: 500px;
-    width: 1200px;
+    width: 400px;
     position: relative;
     top: 100px;
     margin-left: 150px;
+}
+
+.left-text-container h3,p {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    margin: 20px 30px 0 30px;
 }
