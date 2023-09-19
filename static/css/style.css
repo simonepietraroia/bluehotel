@@ -89,7 +89,7 @@ main {
 .left-text-container h3,p {
     text-align: center;
     position: relative;
-    top: 40%;
+    top: 30%;
     margin: 20px 30px 0 30px;
 }
 
@@ -116,7 +116,63 @@ main {
     animation: fade-in 1s ease forwards;
 }
 
-.container-right img {
+.info-container-left img {
     width: 200px;
     height: auto;
+}
+
+.info-container-left {
+    border: 1px solid #eaeaea;
+    width: 300px;
+    height: 450px;
+    margin-left: 150px;
+    position: relative;
+    top: 150px;
+    margin-right: 0;
+}
+
+#breakfast {
+    border: 1px solid #eaeaea;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    top: 195px;
+    right: 4px;
+}
+
+.info-container-left, #breakfast {
+    display: inline-block;
+}
+
+.info-container-right {
+    border: 1px solid #eaeaea;
+    width: 300px;
+    height: 450px;
+    float: right;
+    position: relative;
+    top: 195px;
+    right: 452px;
+}
+
+#hallway {
+    border: 1px solid #eaeaea;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    top: 195px;
+    left: 308px;
+}
+
+.info-container-right h3,p {
+    text-align: center;
+    position: relative;
+    top: 30%;
+    margin: 20px 20px 30px 30px;
+}
+
+.info-container-left h3,p {
+    text-align: center;
+    position: relative;
+    top: 30%;
+    margin: 20px 30px 0 30px;
 }
