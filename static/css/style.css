@@ -86,7 +86,7 @@ main {
     float: left;
 }
 
-.left-text-container h3,p {
+.left-text-container h3,p,a {
     text-align: center;
     position: relative;
     top: 30%;
