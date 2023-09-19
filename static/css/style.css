@@ -209,7 +209,32 @@ main {
 
 #container-social-media {
     position: relative;
-    top: 150px;
-    left: 20%;
+    top: 170px;
+    text-align: center;
+}
 
+.footer-background {
+    background-color: #013b89;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 200px;
+}
+
+#logo-footer {
+    height: 200px;
+    margin-left: 50px;
+}
+
+.tel-and-adress {
+    position: relative;
+    bottom: 160px;
+}
+
+.tel-and-adress p {
+    color: #eaeaea;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 300px;
+    font-size: small;
 }
