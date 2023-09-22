@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bluehotel-31aa453a87a4.herokuapp.com', '8000-simonepietrar-bluehotel-2vrxieq0k74.ws-eu104.gitpod.io']
+ALLOWED_HOSTS = ['bluehotel-31aa453a87a4.herokuapp.com', '8000-simonepietrar-bluehotel-tf0vli5vs13.ws-eu104.gitpod.io']
 
 
 # Application definition
@@ -74,7 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.tonext_processors.request',
+                'django.template.context_processors.request',
             ],
         },
     },
