@@ -3,7 +3,7 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import User 
 
-class Room(models.Model):
+class Room (models.Model):
     ROOM_CHOICES = [
         ('type1', 'Type 1'),
         ('type2', 'Type 2'),
@@ -18,7 +18,7 @@ class Room(models.Model):
     def __str__(self):
         return self.get_room_type_display()
 
-class Booking(models.Model):
+class Booking (models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     check_in_date = models.DateField()

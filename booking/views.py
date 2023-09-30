@@ -1,8 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.views.generic import ListView, CreateView, DetailView
+from .models import Room, Booking
 
-# Create your views here.
+
 def get_home_page(request):
     return render(request, '../templates/base.html')
 
-def get_booking_page(request):
-    return render(request, '../templates/book.html')
+class RoomListView(ListView):
+    model = Room
+    template_name = 'room_list.html'
+    context_object_name = 'rooms'
