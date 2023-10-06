@@ -7,7 +7,13 @@ from sqlalchemy.orm import sessionmaker
 db = create_engine("postgresql:///hmzmzlan")
 base = declarative_base()
 
-class 
+class Guest(base):
+    __tablename_ = "Guest-Booking"
+    id = Column(Interger, primary_key=True)
+    x = Column(String)
+    x = Column(String)
+    x = Column(String)
+    x = Column(String)
 
 
 Session = sessionmaker(db)
