@@ -239,8 +239,6 @@ main {
 /* Stylying for booking page */
 
 .booking-form {
-    width: 500px;
-    margin: 0 auto;
     padding: 50px;
     background: #fff;
   }
@@ -252,24 +250,23 @@ main {
   div.elem-group.inlined {
     width: 49%;
     display: inline-block;
-    float: left;
     margin-left: 1%;
   }
   
   label {
     display: block;
-    font-family: 'Nanum Gothic';
+    font-family: Georgia, Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
     font-size: 1.25em;
   }
   
   input, select, textarea {
     border-radius: 2px;
-    border: 2px solid #777;
+    border: 2px solid black;
     box-sizing: border-box;
     font-size: 1.25em;
-    font-family: 'Nanum Gothic';
-    width: 100%;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    width: 30%;
     padding: 10px;
   }
   
@@ -288,11 +285,11 @@ main {
   
   button {
     height: 50px;
-    background: orange;
+    background: #013b89;
     border: none;
     color: white;
     font-size: 1.25em;
-    font-family: 'Nanum Gothic';
+    font-family: Georgia, Arial, Helvetica, sans-serif;
     border-radius: 4px;
     cursor: pointer;
     padding: 0 12px;
