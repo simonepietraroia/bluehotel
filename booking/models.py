@@ -10,5 +10,6 @@ class GuestBooking(models.Model):
     num_guests = models.PositiveIntegerField()
     room_type = models.IntegerField(choices=ROOM_CHOICES)
 
+
     def __str__(self):
         return self.user
