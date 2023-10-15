@@ -226,14 +226,23 @@ main {
 .footer-background {
     background-color: #013b89;
     width: 100%;
-    height: 200px;
+    height: 100%;
     position: relative;
     top: 200px;
+}
+
+.tel-and-adress {
+    position: relative;
+    bottom: 100px;
+    color: #ccc;
+    padding-bottom: 0;
 }
 
 #logo-footer {
     height: 200px;
     margin-left: 50px;
+    position: relative;
+    top: 60px;
 }
 
 /* Stylying for booking page */
