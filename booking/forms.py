@@ -13,3 +13,7 @@ class GuestBookingForm(forms.ModelForm):
 
         if check_in_date and check_out_date and check_in_date >= check_out_date:
             self.add_error('check_in_date', 'Check-in date must be before check-out date')
+
+    def __init__(self, *args, **kwargs):
+        super(GuestBookingForm, self).__init__(*args, **kwargs)
+

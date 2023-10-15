@@ -1,9 +1,12 @@
-{% extends "base.html" %} {% load static %}
-
-{% block content %}
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Submit</button>
-</form>
+{% extends "base.html" %} {% block content %}
+{% load crispy_forms_tags %}
+<div>
+  {% if user.is_authenticated %}
+  <form method="post">
+    {{ create_booking | crispy }}
+    {% csrf_token %}
+    <button type="submit">Submit</button>
+  </form>
+  {% endif %}
+</div>
 {%endblock%}
