@@ -1,12 +1,13 @@
-{% extends "base.html" %} {% block content %}
-{% load crispy_forms_tags %}
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
 <div>
-  {% if user.is_authenticated %}
+  <h2>Create Booking</h2>
   <form method="post">
-    {{ create_booking | crispy }}
     {% csrf_token %}
+    {{ form.as_p }}
     <button type="submit">Submit</button>
-  </form>
-  {% endif %}
 </div>
-{%endblock%}
+{% endblock %}
