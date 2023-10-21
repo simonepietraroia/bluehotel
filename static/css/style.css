@@ -277,6 +277,13 @@ br {
     text-decoration: none;
 }
 
+.sign-up-button {
+    margin: 0;
+    margin-left: 46%;
+    position: relative;
+    top: 20px;
+}
+
 /* Stylying for booking page */
 
 .booking-form {
