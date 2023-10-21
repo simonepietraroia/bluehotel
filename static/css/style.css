@@ -284,6 +284,25 @@ br {
     top: 20px;
 }
 
+.create-book {
+    position: relative;
+    top: 130px;
+    margin: 0;
+    margin-left: 40%;
+}
+
+.create-book-form {
+    position: relative;
+    top: 150px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 0;
+}
+
+#create-button {
+    margin: 0;
+    margin-top: 20px;
+}
 /* Stylying for booking page */
 
 .booking-form {
