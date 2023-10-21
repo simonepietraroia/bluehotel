@@ -187,42 +187,6 @@ main {
     margin: 20px 30px 0 30px;
 }
 
-.social-networks {
-    font-size: 120%;
-}
-
-.social-networks > li {
-    display: inline;
-}
-
-.social-networks i {
-    font-size: 160%;
-    margin: 1%;
-    padding: 5%;
-}
-
-#facebook {
-    color: #4867aa;
-}
-
-#instagram {
-    color: #d00e9a;
-}
-
-#youtube {
-    color: red;
-}
-
-#tiktok {
-    color: black;
-}
-
-#container-social-media {
-    position: relative;
-    top: 170px;
-    text-align: center;
-}
-
 .footer-background {
     background-color: #013b89;
     width: 100%;
@@ -365,6 +329,20 @@ br {
   button:hover {
     background: #333;
   }
+
+@media screen and (max-width:1440px) {
+    .info-container-right {
+        right: 375px;
+    }
+
+    .info-container-left {
+        right: 80px;
+    }
+
+    #breakfast {
+        right: 85px;
+    }
+}
 
 @media screen and (max-width:1200px) {
 
