@@ -245,6 +245,38 @@ main {
     top: 60px;
 }
 
+br {
+    border: 1px solid gray;
+}
+
+.login-form {
+    position: relative;
+    top: 130px;
+}
+
+.sign-in-tag {
+    position: relative;
+    top: 130px;
+    margin: 0;
+    margin-left: 47%;
+}
+
+.sign-in-note{
+    position: relative;
+    top: 150px;
+}
+
+.sign-in-button {
+    margin: 0;
+    margin-left: 47%;
+    position: relative;
+    top: 20px;
+}
+
+.sign-in-link {
+    text-decoration: none;
+}
+
 /* Stylying for booking page */
 
 .booking-form {
@@ -307,3 +339,15 @@ main {
   button:hover {
     background: #333;
   }
+
+@media screen and (max-width:1200px) {
+
+}
+
+@media screen and (max-width:850px) {
+
+}
+
+@media screen and (max-width:550px) {
+
+}

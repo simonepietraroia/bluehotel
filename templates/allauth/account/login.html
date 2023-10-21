@@ -1,34 +1,23 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %} {% load static %}
 
 {% load i18n %}
 {% load account socialaccount %}
 
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block head_title %}
+{% trans "Sign In" %}
+{% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <h3>{% trans "Sign In" %}</h3>
-
-<p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-8 mt-3 offset-md-2">
-
+<h3 class="sign-in-tag">{% trans "Sign In" %}</h3>
+<div class="login-form">
   <form class="login" method="POST" action="{% url 'account_login' %}">
     {% csrf_token %}
     {{ form.as_p }}
     {% if redirect_field_value %}
-    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
     {% endif %}
-    <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
+  <button class="sign-in-button" type="submit">{% trans "Sign In" %}</button>
   </form>
-    </div>
-  </div>
 </div>
-
+<p class="sign-in-note">{% blocktrans %} If you do not have an account click<a class="sign-in-link" href="{{ signup_url }}">Sign up</a>to create your own account to make bookings. {% endblocktrans %}</p>
 {% endblock %}

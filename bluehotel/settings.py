@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bluehotel-31aa453a87a4.herokuapp.com', '8000-simonepietrar-bluehotel-5mn6ws9jq2u.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['bluehotel-31aa453a87a4.herokuapp.com', '8000-simonepietrar-bluehotel-q3p0azlaosh.ws-eu105.gitpod.io']
 
 
 # Application definition
@@ -66,7 +66,10 @@ ROOT_URLCONF = 'bluehotel.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
