@@ -6,17 +6,20 @@ from .models import GuestBooking
 class GuestBookingForm(forms.ModelForm):
     class Meta:
         model = GuestBooking
-        fields = ['name', 'email', 'check_in_date', 'check_out_date', 'num_guests', 'room_type']
-
+        fields = ['guest_name', 'email', 'check_in_date', 'check_out_date', 'num_guests', 'room_type']
+        widgets = {
+            'check_in_date': forms.DateInput(attrs={'class': 'datepicker'}),
+            'check_out_date': forms.DateInput(attrs={'class': 'datepicker'}),
+        }
     def __init__(self, *args, **kwargs):
         super(GuestBookingForm, self).__init__(*args, **kwargs)
         self.helper = FormHelper()
         self.helper.layout = Layout(
-            'name',
+            'guest_name',
             'email',
             'check_in_date',
             'check_out_date',
             'num_guests',
             'room_type',
-            Submit('submit', 'Create Booking')
+            Submit('submit', 'Book')
         )

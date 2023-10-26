@@ -3,16 +3,18 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-{% if user.is_authenticated %}
-    <h2 class="create-book">Create a Booking</h2>
-    <div class="create-book-form">
-      <form method="post">
-          {% csrf_token %}
-          {{ form | crispy }}
-          <button id="create-button" type="submit">Confirm booking</button>
-      </form>
+  <h2>Create a Booking</h2>
+  <div id="create-booking-form">
+    <form method="post">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <script>
+        flatpickr(".datepicker", {
+          dateFormat: "Y-m-d",
+          minDate: "today",
+        });
+      </script>
+      <button type="submit" class="create-button">Create Booking</button>
+    </form>
   </div>
-{% endif %}
-
-
 {% endblock %}

@@ -267,6 +267,18 @@ br {
     margin: 0;
     margin-top: 20px;
 }
+
+#create-booking-form {
+    position: relative;
+    top: 100px;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
+.create-button {
+    position: relative;
+    top: 10px;
+}
 /* Stylying for booking page */
 
 .booking-form {

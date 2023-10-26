@@ -15,8 +15,12 @@ class GuestBookingCreateView(CreateView):
     model = GuestBooking
     template_name = 'create_booking.html'
     form_class = GuestBookingForm
-    success_url = '/guestbookings/'  
+    success_url = 'get_home_page'  
 
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)
+            
 class GuestBookingUpdateView(UpdateView):
     model = GuestBooking
     template_name = 'guestbooking/guestbooking_form.html'
