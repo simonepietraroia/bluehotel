@@ -292,6 +292,11 @@ br {
     margin-left: 47%;
     margin-bottom: 91.5px;
 }
+
+.booking-list {
+    position: relative;
+    top: 150px;
+}
 /* Stylying for booking page */
 
 .booking-form {
