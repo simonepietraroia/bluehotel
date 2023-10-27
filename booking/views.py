@@ -2,15 +2,19 @@ from django.shortcuts import render, redirect
 from .models import GuestBooking
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from .forms import GuestBookingForm
-from django.urls import reverse, reverse_lazy
+from django.urls import reverse
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 def get_home_page(request):
     return render(request, '../templates/index.html')
    
-class GuestBookingListView(ListView):
+class GuestBookingListView(LoginRequiredMixin,ListView):
     model = GuestBooking
     template_name = 'guestbooking_list.html'
     context_object_name = 'bookings'
+
+    def get_queryset(self):
+        return GuestBooking.objects.filter(user=self.request.user)
 
 class GuestBookingCreateView(CreateView):
     model = GuestBooking
@@ -22,7 +26,7 @@ class GuestBookingCreateView(CreateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse('get_home_page')
+        return reverse('booking_list')
             
 class GuestBookingUpdateView(UpdateView):
     model = GuestBooking
