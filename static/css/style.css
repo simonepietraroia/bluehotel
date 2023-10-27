@@ -312,6 +312,22 @@ br {
   margin-bottom: 20px;
 }
 
+#delete-confirm {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#delete-confirm a {
+    text-decoration: none;
+}
+
+#delete-form {
+    margin-bottom: 34px;
+    margin-top: 50px;
+}
+
 /* Stylying for booking page */
 
 .booking-form {

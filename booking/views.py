@@ -2,8 +2,9 @@ from django.shortcuts import render, redirect
 from .models import GuestBooking
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from .forms import GuestBookingForm
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.decorators import login_required
 
 def get_home_page(request):
     return render(request, '../templates/index.html')
@@ -39,6 +40,8 @@ class GuestBookingUpdateView(UpdateView):
 class GuestBookingDeleteView(DeleteView):
     model = GuestBooking
     template_name = 'booking_confirm_delete.html'
+    success_url = reverse_lazy('booking_list')
+
     
     def confirm_delete(self):
-        return reverse('booking_list')
+        return reverse('/booking_list/')
