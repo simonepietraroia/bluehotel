@@ -279,6 +279,19 @@ br {
     position: relative;
     top: 10px;
 }
+
+#sign-out-message {
+    margin-left: 40%;
+    position: relative;
+    top: 50px;
+}
+
+.sign-out-button {
+    position: relative;
+    top: 80px;
+    margin-left: 47%;
+    margin-bottom: 91.5px;
+}
 /* Stylying for booking page */
 
 .booking-form {
