@@ -26,11 +26,15 @@ class GuestBookingCreateView(CreateView):
             
 class GuestBookingUpdateView(UpdateView):
     model = GuestBooking
-    template_name = 'guestbooking/guestbooking_form.html'
+    template_name = 'guestbooking_update.html'
     form_class = GuestBookingForm
-    success_url = '/guestbookings/'
+    
+    def get_success_url(self):
+        return reverse('booking_list')
 
 class GuestBookingDeleteView(DeleteView):
     model = GuestBooking
-    template_name = 'guestbooking/booking_confirm_delete.html'
-    success_url = reverse_lazy('booking_list')
+    template_name = 'booking_confirm_delete.html'
+    
+    def confirm_delete(self):
+        return reverse('booking_list')
