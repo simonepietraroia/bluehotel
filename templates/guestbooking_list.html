@@ -2,15 +2,18 @@
 
 {% block content %}
 <div class="booking-list">
-<h2>Your Bookings</h2>
-<ul>
-   {% for booking in bookings %}
-   <li>
-       Booking Date: {{ booking.booking_date }}<br>
-       <a href="{% url 'update_booking' booking.pk %}">Update</a> |
-       <a href="{% url 'delete_booking' booking.pk %}">Delete</a>
-   </li>
-   {% endfor %}
-</ul>
+    <h2>Your Bookings</h2>
+    <ul>
+        <div class="box">
+    {% for booking in bookings %}
+        <div class="box">
+        <li>
+            Booking Date: {{ booking.check_in_date }} - {{ booking.check_out_date }}<br>
+            <a href="{% url 'update_booking' booking.pk %}">Update</a> |
+            <a href="{% url 'delete_booking' booking.pk %}">Delete</a>
+        </li>
+        </div>
+    {% endfor %}
+    </ul>
 </div>
 {% endblock %}

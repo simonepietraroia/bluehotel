@@ -5,6 +5,12 @@
 <form method="post">
    {% csrf_token %}
    {{ form.as_p }}
+   <script>
+      flatpickr(".datepicker", {
+        dateFormat: "Y-m-d",
+        minDate: "today",
+      });
+    </script>
    <button type="submit">Update</button>
 </form>
 <a href="{% url 'booking_list' %}">Back to Bookings</a>

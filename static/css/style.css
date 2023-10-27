@@ -296,7 +296,22 @@ br {
 .booking-list {
     position: relative;
     top: 150px;
+    margin-bottom: 100px;
 }
+
+.booking-list ul {
+    list-style-type: none;
+}
+
+.box {
+  width: 400px; 
+  height: 80px; 
+  border: 1px solid black; 
+  border-radius: 5px; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /* Stylying for booking page */
 
 .booking-form {
