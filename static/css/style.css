@@ -5,6 +5,12 @@ body {
     color: #012c64;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* Styling for Navigation bar */
+
 #nav-bar {
     background-color: #013b89;
     width: 100%;
@@ -28,6 +34,8 @@ body {
     position: relative;
     left: 50%;
 }
+
+/* Collapsable menu navigator styling */
 
 .menu-container {
     position: fixed;
@@ -76,6 +84,8 @@ body {
     z-index: 1;
 }
 
+/* Hero image styling */
+
 main {
     margin-left: 20px; 
     padding: 20px;
@@ -85,6 +95,8 @@ main {
     width: 100%;
     height: 800px;
 }
+
+/* Introduction section styling */
 
 .left-text-container {
     background-color: #eaeaea;
@@ -125,6 +137,8 @@ main {
     opacity: 0;
     animation: fade-in 1s ease forwards;
 }
+
+/* Hotel features section styling */
 
 .info-container-left img {
     width: 200px;
@@ -187,6 +201,8 @@ main {
     margin: 20px 30px 0 30px;
 }
 
+/* Footer section styling */
+
 .footer-background {
     background-color: #013b89;
     width: 100%;
@@ -209,9 +225,7 @@ main {
     top: 60px;
 }
 
-br {
-    border: 1px solid gray;
-}
+/* Login page */
 
 .login-form {
     position: relative;
@@ -248,25 +262,7 @@ br {
     top: 20px;
 }
 
-.create-book {
-    position: relative;
-    top: 130px;
-    margin: 0;
-    margin-left: 40%;
-}
-
-.create-book-form {
-    position: relative;
-    top: 150px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 0;
-}
-
-#create-button {
-    margin: 0;
-    margin-top: 20px;
-}
+/* Booking a room form styling */
 
 .create-booking-form {
     position: relative;
@@ -279,6 +275,8 @@ br {
     position: relative;
     top: 20px;
 }
+
+/* Sign out page styling */
 
 #sign-out-message {
     margin-left: 40%;
@@ -293,6 +291,8 @@ br {
     margin-bottom: 91.5px;
 }
 
+/* Manage Booking Page */
+
 .booking-list {
     position: relative;
     top: 150px;
@@ -303,6 +303,10 @@ br {
     list-style-type: none;
 }
 
+#your-bookings {
+    margin-left: 30px;
+}
+
 .box {
   width: 400px; 
   height: 80px; 
@@ -311,6 +315,8 @@ br {
   text-align: center;
   margin-bottom: 20px;
 }
+
+/* Delete Confirmation page */
 
 #delete-confirm {
     position: relative;
@@ -339,69 +345,6 @@ br {
     top: 130px;
     text-align: center;
 }
-
-/* Stylying for booking page */
-
-.booking-form {
-    padding: 50px;
-    background: #fff;
-  }
-  
-  div.elem-group {
-    margin: 20px 0;
-  }
-  
-  div.elem-group.inlined {
-    width: 49%;
-    display: inline-block;
-    margin-left: 1%;
-  }
-  
-  label {
-    display: block;
-    font-family: Georgia, Arial, Helvetica, sans-serif;
-    padding-bottom: 10px;
-    font-size: 1.25em;
-  }
-  
-  input, select, textarea {
-    border-radius: 2px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    font-size: 1.25em;
-    font-family: Georgia, Arial, Helvetica, sans-serif;
-    width: 30%;
-    padding: 10px;
-  }
-  
-  div.elem-group.inlined input {
-    width: 95%;
-    display: inline-block;
-  }
-  
-  textarea {
-    height: 250px;
-  }
-  
-  hr {
-    border: 1px dotted #ccc;
-  }
-  
-  button {
-    height: 50px;
-    background: #013b89;
-    border: none;
-    color: white;
-    font-size: 1.25em;
-    font-family: Georgia, Arial, Helvetica, sans-serif;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 0 12px;
-  }
-  
-  button:hover {
-    background: #333;
-  }
 
 @media screen and (max-width:1440px) {
     .info-container-right {
