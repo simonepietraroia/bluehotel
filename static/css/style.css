@@ -346,6 +346,78 @@ main {
     text-align: center;
 }
 
+/* Stylying for form pages */
+
+.booking-form {
+    padding: 50px;
+    background: #fff;
+  }
+  
+  div.elem-group {
+    margin: 20px 0;
+  }
+  
+  div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    margin-left: 1%;
+  }
+  
+  label {
+    display: block;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    font-size: 1.25em;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    width: 30%;
+    padding: 10px;
+  }
+  
+  div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+  hr {
+    border: 1px dotted #ccc;
+  }
+  
+  button {
+    height: 50px;
+    background: #013b89;
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0 12px;
+  }
+  
+  button:hover {
+    background: #333;
+  }
+
+/* Styling for Responsiveness */
+
+@media screen and (max-width:2560px) {
+    #hero-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media screen and (max-width:1440px) {
     .info-container-right {
         right: 375px;
@@ -358,16 +430,193 @@ main {
     #breakfast {
         right: 85px;
     }
+
+    .booking-list {
+        margin-bottom: 150px;
+    }
+
+    #delete-confirm {
+        margin-bottom: 60px;
+    }
+
+    .sign-out-button {
+        margin-bottom: 130px;
+    }
+
+    .left-text-container {
+        height: 350px;
+        width: 200px;
+        margin-left: 100px;
+    }
+    
+    .left-text-container h3,p,a {
+        font-size: medium;
+    }
+    
+    .right-img {
+        height: 350px;
+        width: 615px;
+    }
 }
 
 @media screen and (max-width:1200px) {
+    .left-text-container {
+        height: 350px;
+        width: 200px;
+        margin-left: 100px;
+    }
+    
+    .left-text-container h3,p,a {
+        font-size: medium;
+    }
+    
+    .right-img {
+        height: 350px;
+        width: 615px;
+    }
 
+    .info-container-left {
+        margin-left: 29%;
+        top: 146px;
+    }
+
+    #hallway {
+        left: 21%;
+    }
+
+    .info-container-right {
+        right: 20.5%;
+    }
+    
 }
 
 @media screen and (max-width:850px) {
+    #hero-img {
+        width: 100%;
+        height: auto;
+    }
 
+    .right-img {
+        height: 300px;
+        width: 450px;
+    }
+
+    .left-text-container {
+        height: 300px;
+        width: 200px;
+        margin-left: 60px;
+    }
+
+    .left-text-container h3,p,a {
+        font-size: small;
+        margin-top: 5px;
+    }
+
+    .info-container-left {
+        margin-left: 35%;
+        top: 114px;
+        width: 200px;
+        height: 350px;
+    }
+
+    #breakfast {
+        width: 200px;
+        height: 350px;
+        top: 144px;
+        margin-left: 0;
+    }
+    
+    .info-container-left h3,p {
+        font-size: medium;
+    }
+
+    .info-container-right {
+        right: 23.5%;
+        width: 200px;
+        height: 350px;
+    }
+
+    #hallway {
+        width: 200px;
+        height: 350px;
+        left: 24.5%;
+    }
+
+    .info-container-right h3,p {
+        font-size: medium;
+    }
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:426px) {
+    .nav-item {
+        font-size: medium;
+    }
 
+    #logo {
+        left: 30%;
+    }
+
+    #hero-img {
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .left-text-container {
+        width: 100%;
+        margin-left: 0;
+        top: 0;
+    }
+
+    .right-img {
+        width: 100%;
+        top: 0;
+    }
+
+    .info-container-left {
+        width: 350px;
+        height: 450px;
+        top: 30px;
+        margin-left: 0;
+        position: relative;
+        left: 9%;
+    }
+
+    #breakfast {
+        width: 350px;
+        height: 450px;
+        top: 60px;
+        margin-left: 0;
+        position: relative;
+        left: 9%;
+    }
+
+    .info-container-right {
+        right: 9%;
+        width: 350px;
+        height: 450px;
+        top: 90px;
+    }
+
+    #hallway {
+        width: 350px;
+        height: 450px;
+        left: 9%;
+        top: 120px;
+    }
+
+    #logo-footer {
+        height: 100px;
+        margin-left: 38%;
+        position: relative;
+        top: 80px;
+    }
+
+    .sign-in-tag {
+        margin-left: 41%;
+    }
+
+    .sign-in-button {
+        margin-left: 40%;
+    }
 }
