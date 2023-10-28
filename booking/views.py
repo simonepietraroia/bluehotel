@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 def get_home_page(request):
     return render(request, '../templates/index.html')
    
-class GuestBookingListView(LoginRequiredMixin,ListView):
+class GuestBookingListView(LoginRequiredMixin, ListView):
     model = GuestBooking
     template_name = 'guestbooking_list.html'
     context_object_name = 'bookings'
@@ -17,7 +17,7 @@ class GuestBookingListView(LoginRequiredMixin,ListView):
     def get_queryset(self):
         return GuestBooking.objects.filter(user=self.request.user)
 
-class GuestBookingCreateView(CreateView):
+class GuestBookingCreateView(LoginRequiredMixin, CreateView):
     model = GuestBooking
     template_name = 'create_booking.html'
     form_class = GuestBookingForm
