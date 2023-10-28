@@ -268,16 +268,16 @@ br {
     margin-top: 20px;
 }
 
-#create-booking-form {
+.create-booking-form {
     position: relative;
-    top: 100px;
+    top: 150px;
     margin-left: 33%;
     margin-right: 33%;
 }
 
 .create-button {
     position: relative;
-    top: 10px;
+    top: 20px;
 }
 
 #sign-out-message {
@@ -326,6 +326,18 @@ br {
 #delete-form {
     margin-bottom: 34px;
     margin-top: 50px;
+}
+
+.back-list-button {
+    position: relative;
+    top: 160px;
+    text-decoration: none;
+}
+
+.booking-form-headline {
+    position: relative;
+    top: 130px;
+    text-align: center;
 }
 
 /* Stylying for booking page */
