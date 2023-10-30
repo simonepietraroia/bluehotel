@@ -191,7 +191,7 @@ This site was deployed using Heroku
 
 4. On Heroku go to deploy and connect to the project with github, select the project, and below click deploy.
 
-Live link : https://bluehotel-31aa453a87a4.herokuapp.com/
+Live link : https://bluehotel-31aa453a87a4.herokuapp.com/ 
 
 ## Credits
 
