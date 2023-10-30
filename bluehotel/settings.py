@@ -27,9 +27,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['bluehotel-31aa453a87a4.herokuapp.com', '8000-simonepietrar-bluehotel-tegbrjmjprh.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['bluehotel-31aa453a87a4.herokuapp.com', '8000-simonepietrar-bluehotel-d71124893ni.ws-eu105.gitpod.io']
 
 
 # Application definition
