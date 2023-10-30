@@ -623,7 +623,88 @@ main {
     }
 
     .right-img {
-        width: 50%;
+        width: 55%;
         height: 800px;
+    }
+
+    .left-text-container {
+        height: 800px;
+        width: 600px;
+        margin-left: 280px;
+    }
+
+    .left-text-container h3,p,a {
+        font-size: xx-large;
+        margin-top: 40px;
+    }
+
+    .info-container-left {
+        width: 400px;
+        height: 800px;
+        top: 5px;
+        left: 5%;
+    }
+
+    #hallway {
+        width: 550px;
+        height: 800px;
+        left: 24.5%;
+        top: 200px;
+    }
+
+    #breakfast {
+        width: 550px;
+        height: 800px;
+        top: 200px;
+        margin-left: 0;
+        position: relative;
+        left: 4.5%;
+    }
+
+    .info-container-right {
+        right: 32%;
+        width: 400px;
+        height: 800px;
+        top: 200px;
+    }
+
+    .sign-in-tag {
+        font-size: xxx-large;
+    }
+
+    .sign-in-button {
+        font-size: xx-large;
+    }
+
+    .sign-in-note {
+        margin-bottom: 150px;
+    }
+
+    body {
+        font-size: 150%;
+    }
+
+    .create-button {
+        margin-bottom: 150px;
+    }
+
+    .booking-list {
+        margin-bottom: 800px;
+    }
+
+    #delete-confirm {
+        margin-bottom: 600px;
+    }
+
+    #delete-confirm h4 {
+        font-size: 200%;
+    }
+
+    #sign-out-message {
+        font-size: 200%;
+    }
+
+    .sign-out-button {
+        margin-bottom: 700px;
     }
 }
