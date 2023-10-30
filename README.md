@@ -159,11 +159,15 @@ The website was tested in different browsers.
 
 1. HTML
 
+<img src='assets/images/html-validator.jpg' alt='image of html validator' width='400px'>
+
 2. CSS
 
-<img src='assets/images/CSS validating.jpg' alt='image of css validator'>
+<img src='assets/images/CSS validating.jpg' alt='image of css validator' width='400px'>
 
 3. Javascript
+
+<img src='assets/images/javascript-validator.jpg' alt='image of javascript validator results' width='400px'>
 
 ### Fixed bugs
 
