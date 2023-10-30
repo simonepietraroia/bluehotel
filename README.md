@@ -151,9 +151,9 @@ The website was tested in different browsers.
 
 |Browser| compatibility|
 |------------------------------------|-------------|
-|Mozilla Firefox version 111.0.1 |no problems|
-|Microsoft Edge Version 108.0.1462.54 |no problems|
-|Google Chrome Version 	111.0.5563.146 | no problems|
+|Mozilla Firefox version 119.0 |no problems|
+|Microsoft Edge Version 118.0.2088.76 |no problems|
+|Google Chrome Version Mac OS 118.0.5993.117 | no problems|
 
 ### Validator Testing
 

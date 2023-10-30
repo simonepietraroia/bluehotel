@@ -411,12 +411,6 @@ main {
 
 /* Styling for Responsiveness */
 
-@media screen and (max-width:2560px) {
-    #hero-img {
-        width: 100%;
-        height: auto;
-    }
-}
 
 @media screen and (max-width:1440px) {
     .info-container-right {
@@ -618,5 +612,11 @@ main {
 
     .sign-in-button {
         margin-left: 40%;
+    }
+}
+
+@media screen and (max-width:2560px) {
+    #hero-img {
+        width: 300px;
     }
 }
